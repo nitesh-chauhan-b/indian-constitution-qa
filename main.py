@@ -74,7 +74,7 @@ if __name__ =="__main__":
                 source_doc = response.source_nodes
 
                 #Providing source
-                st.download_button("Download Source",source_doc[0].text)
+                st.download_button("Download Source",source_doc[0].text,file_name="question_source")
 
     except Exception as e:
         st.write("Something went wrong ",e)
